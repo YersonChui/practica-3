@@ -1,6 +1,6 @@
-// Fecha creación: 06/09/2023
-// Fecha modificación: 06/09/2023
-// Número de ejericio: 1
+// Fecha creaciÃ³n: 06/09/2023
+// Fecha modificaciÃ³n: 06/09/2023
+// NÃºmero de ejericio: 1
 // Problema planteado: Elabore un programa que lea una matriz de orden n x n y la cambie la fila 1 porla fina n.
 #include <iostream>
 using namespace std;
@@ -11,7 +11,7 @@ int main() {
     int matriz[n][n];
     for (int i=0; i<n; i++) { //Recorre las filas
         for (int j=0; j<n; j++) { //Recorre las columnas
-            cout << "Ingrese el elemento [" << i << "][" << j << "]: ";cin >> matriz[i][j];
+            cout << "Ingrese los valores [" <<i<< "][" <<j<< "]: ";cin >> matriz[i][j];
         }
     }
     int aux[n]; //auxiliar
@@ -24,9 +24,9 @@ int main() {
     for (int j = 0; j < n; j++) {
         matriz[n-1][j] = aux[j];
     }
-    cout << "El arreglo modificado es: "<<endl;
-    for (int i = 0; i < n; i++) { //filas
-        for (int j = 0; j < n; j++) { //columnas
+    cout << "la nueva matriz es: "<<endl;
+    for (int i = 0; i<n; i++) { //filas
+        for (int j = 0; j<n; j++) { //columnas
             cout << matriz[i][j] << " ";
         }
         cout<<endl;
